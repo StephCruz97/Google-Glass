@@ -1,13 +1,33 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(255, 255, 255);
-    color:hsl(279, 71%, 25%);
+    background-color: #dddddd;
+    color:rgba(0,0,0,1);
 }
-p{
+
+div#interface {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+p {
     text-align: justify;
     text-indent: 50px;
+} 
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 780px;
+    top: 40px;
+
 }
+
+header#cabecalho {
+
+} 
 
 /* Formatação de Imagens com Legendas */
 
@@ -39,11 +59,9 @@ figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 
-/* Formatação do Menu*/
+/*Formatação do Menu*/
 
-nav#menu {
-    display: block;
-}
+
 
 nav#menu ul {
     list-style: none;
@@ -59,8 +77,25 @@ nav#menu li {
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+
 }
 
 nav#menu h1 {
     display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
